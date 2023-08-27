@@ -1,0 +1,28 @@
+@import 'vars';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration:none;
+  color: inherit;
+}
+
+body {
+  font-size: 14px;
+  color: $dark;
+  line-height: 16px;
+  background: #eae4e4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  overflow-y: scroll;
+}
+#__nuxt {
+  width: inherit;
+}
