@@ -1,63 +1,18 @@
-# Nuxt 3 Minimal Starter
+Это одно из тестовых заданий.
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Задание:
 
-## Setup
+Написать веб приложение на Vue3 используя фреймворк Nuxt 3.
+Приложение должно состоять из 1 страницы в виде каталога с поиском и списка элементов.
+На странице необходимо подключить обращения к любой публичной API, можно взять из этого источника: https://rapidapi.com/collection/list-of-free-apis
+Обязательно необходимо использовать flex верстку + SCSS, предусмотреть адаптивность под любые размеры экранов, использовать TypeScript.
 
-Make sure to install the dependencies:
+Функционал:
+- глубокий поиск на стороне клиента, по любому совпадению свойств элемента (например, это интернет-магазин по продаже цифровой техники, товар имеет наименование, цвет, размер и т. д. При вводе в поиске любого из свойств товара – фильтровать список, отображая совпадения)
+- изменение отображения списка элементов (реализовать 2 вида: плиточный, горизонтальный список)
+- добавить пагинацию (можно в любой форме)
+- при клике на любой из элементов выводить те самые свойства элемента (детализация). Можно использовать модальное окно или переход на отдельную страницу.
+- использовать vuex/store, для хранения элементов, действий клиента.
 
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Была реализована таблица, которую можно "настроить" из вне кнопки, отображения полей поиск(при желании можно легко вставить фильтры) и режим отображения элементов таблицы.
+Моя идея заключалась в том, что я хотел сделать таблицу из коробки, которая будет автоматом расставлять поля, осуществлять поиск и тп, но и чтобы имела возможность изменить внешний вид и дополнить функционал, без ущерба существующему 
